@@ -4,12 +4,17 @@
     "dev": "bun run --hot src/index.ts",
     "build": "bun build ./src/index.ts --outdir ./dist",
     "build:prod": "bun build ./src/index.ts --outdir ./dist --minify",
-    "test": "bun test"
+    "lint": "eslint .",
+    "test": "bun test",
+    "security-scan": "bunx snyk test"
   },
   "dependencies": {
     "hono": "^4.5.11"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.4.0"
   }
 }
