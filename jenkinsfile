@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        EMAIL_RECIPIENT = 'joshpjman@gmail.com',
+        EMAIL_RECIPIENT = 'joshpjman@gmail.com'
         EMAIL_SENDER = 's220254185@deakin.edu.au'
     }
 
